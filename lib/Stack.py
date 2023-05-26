@@ -15,9 +15,7 @@ class Stack:
             self.items.append(item)
 
     def pop(self):
-        if(self.isEmpty()):
-            return
-        return self.items.pop()
+        return None if self.isEmpty() else self.items.pop()
 
     def peek(self):
         return self.items[-1]
